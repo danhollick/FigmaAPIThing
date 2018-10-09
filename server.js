@@ -50,9 +50,8 @@ async function figmaFileFetch(fileId){
 }
 
 
-app.use('/test', async function (req, res, next) {
+app.use('/frames', async function (req, res, next) {
     let result = await figmaFileFetch(FigmaFileID).catch(error => console.log(error))
-    console.log(result)
     res.send(result)
 })
 

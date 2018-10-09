@@ -24,7 +24,7 @@ class App extends Component {
 }
 
  componentDidMount() {
-    fetch('/test')
+    fetch('/frames')
       .then(res => res.json())
       .then(data => this.setState({ images: data }))
       .then(console.log(this.state))
