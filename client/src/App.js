@@ -27,7 +27,6 @@ class App extends Component {
     fetch('/frames')
       .then(res => res.json())
       .then(data => this.setState({ images: data }))
-      .then(console.log(this.state))
       .catch(error => console.log(error));
   }
 
